@@ -43,7 +43,7 @@
     }
     window.addEventListener( "DOMContentLoaded", () => {
 
-        fetch( "/samples/basic.json" ).then( resp => resp.json() ).then( json => raw.value = JSON.stringify( json, null, 3 ) );
+        fetch( "/redesigned-potato/samples/basic.json" ).then( resp => resp.json() ).then( json => raw.value = JSON.stringify( json, null, 3 ) );
 
     } );
     window.redPotEncode = encode;
