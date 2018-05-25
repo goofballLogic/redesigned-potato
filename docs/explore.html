@@ -1,0 +1,30 @@
+<html>
+
+    <head>
+
+        <script src="./encode.js"></script>
+        <style>
+            .workbench { display: flex; min-height: 600px; }
+            .workbench > * { flex: 1; }
+            .workbench .pipeline > * { display: block; text-align: center; margin: 10px auto; }
+            textarea { min-width: 400px; min-height: 100px; }
+        </style>
+    </head>
+    <body>
+
+        <div class="workbench">
+            <textarea id="raw"></textarea>
+            <div class="pipeline">
+                    <button onClick="encoded.value=redPotEncode(raw.value);encodedBase64.value=btoa(encoded.value);">Encode</button>
+                    <h4>Encoded</h4>
+                    <textarea id="encoded"></textarea>
+                    <h4>...then base64 encoded (for querystring)</h4>
+                    <textarea id="encodedBase64"></textarea>
+                    <button onClick="decoded.value=redPotDecode(atob(encodedBase64.value))">Decode</button>
+            </div>
+            <textarea id="decoded"></textarea>
+        </div>
+
+    </body>
+
+</html>

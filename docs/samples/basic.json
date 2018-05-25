@@ -1,0 +1,43 @@
+{
+    "type" : 2,
+    "frameMaterial": 17,
+    "topFiller": true,
+    "interior": true,
+    "dimensions":
+    {
+      "width": 2324,
+      "height": 1800
+    },
+    "doors":
+    [
+      {
+        "type":2,
+        "panelMaterials":
+        [
+          2,
+          5,
+          24
+        ],
+        "interior": 12
+      },
+      {
+        "type":1,
+        "panelMaterials":
+        [
+          2,
+          24
+        ],
+        "interior": 12
+      },
+      {
+        "type":2,
+        "panelMaterials":
+        [
+          2,
+          5,
+          24
+        ],
+        "interior": 5
+      }
+    ]
+  }
